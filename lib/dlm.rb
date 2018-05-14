@@ -9,11 +9,10 @@ class DLM
   end
 
   def lock(what, block = false, lockinfo = 1)
-    if block
-      self.wait(what)
-    end
+    self.wait(what) if block
     ret = @redis.set("dlm_#{what}", lockinfo, :nx => true)
     raise DLMLockTaken, "Lock is already taken for #{what}: dlm_#{what}" unless ret
+    ret
   end
 
   def wait(what)
