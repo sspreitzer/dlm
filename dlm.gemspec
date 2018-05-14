@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'dlm'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2018-05-14'
   s.summary     = "Distributed Lock Manager"
   s.description = "Conservative redis based ruby distributed lock manager"
