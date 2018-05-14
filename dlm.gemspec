@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Conservative redis based ruby distributed lock manager"
   s.authors     = ["Sascha Spreitzer"]
   s.email       = 'sascha@redhat.com'
-  s.files       = ["dlm.rb"]
+  s.files       = ["lib/dlm.rb"]
   s.homepage    =
     'http://github.com/sspreitzer/dlm'
   s.license       = 'MIT'
